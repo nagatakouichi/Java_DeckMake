@@ -1,0 +1,31 @@
+　　　火　　　　　　　　　　コスト:3  hutter rupia    パワー:3000
+　　　火　　　　　　　　　　コスト:3  hutter rupia    パワー:3000
+　　　火　　　　　　　　　　コスト:3  hutter rupia    パワー:3000
+　　　火　　　　　　　　　　コスト:3  hutter rupia    パワー:3000
+　　　火　　　　　　闇　光　コスト:4  alice no totsugeki interview
+　　　火　　　　　　闇　光　コスト:4  alice no totsugeki interview
+　　　火　　　　　　闇　光　コスト:4  alice no totsugeki interview
+　　　火　　　　　　闇　光　コスト:4  alice no totsugeki interview
+
+マナカーブ
+cost | num :
+  0  |   0 :
+  1  |   0 :
+  2  |   0 :
+  3  |   4 :■■■■
+  4  |   4 :■■■■
+  5  |   0 :
+  6  |   0 :
+  7  |   0 :
+  8  |   0 :
+  9  |   0 :
+ 10+ |   0 :
+
+色バランス
+文明 : 単色|多色|合計
+ゼロ :   0|  0|  0  
+火　 :   4|  4|  8  ■■■■□□□□
+自然 :   0|  0|  0  
+水　 :   0|  0|  0  
+闇　 :   0|  4|  4  □□□□
+光　 :   0|  4|  4  □□□□
