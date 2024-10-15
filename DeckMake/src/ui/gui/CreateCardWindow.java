@@ -32,6 +32,7 @@ public class CreateCardWindow extends JFrame {
         this.manager = manager;
         this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.Y_AXIS));
         this.setSize(this.WINDOW_WIDTH, WINDOW_HEIGHT);
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         this.addCardTypeComboBox();
         this.addCardNameTextField();

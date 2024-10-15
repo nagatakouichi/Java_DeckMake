@@ -21,7 +21,7 @@ public class YesNoGUIManager {
 
     public boolean yesNoGUI(String labelText){
         JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setSize(300, 150);
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
         frame.addWindowListener(new CloseWindowListener(this));

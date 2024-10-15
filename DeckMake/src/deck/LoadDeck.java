@@ -1,10 +1,7 @@
 package deck;
 
-import card.data.Card;
-
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
-import java.util.ArrayList;
 
 public class LoadDeck {
     public static Deck load(String fileName){

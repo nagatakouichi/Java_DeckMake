@@ -8,6 +8,11 @@ import java.io.ObjectOutputStream;
 public class SaveDeck {
 
     public static boolean save(DeckManager deckManager, String saveFileName){
+        if (saveFileName == null || saveFileName.isEmpty()) {
+            System.out.println("セーブするファイル名が入力されていません。");
+            return false;
+        }
+
         String textSaveFile = saveFileName + ".txt";
         try (FileWriter fw = new FileWriter(textSaveFile)) {
             for (Card card : deckManager.getCardList()) {

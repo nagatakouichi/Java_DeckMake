@@ -9,7 +9,7 @@ public class DeckDataGUIManager {
     private JFrame frame = new JFrame("デッキ内容");
 
     public DeckDataGUIManager() {
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.setSize(700, 500);
         frame.setLocation(500, 0);
         frame.setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.Y_AXIS));
