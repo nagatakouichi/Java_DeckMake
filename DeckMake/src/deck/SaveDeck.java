@@ -7,20 +7,25 @@ import java.io.ObjectOutputStream;
 
 public class SaveDeck {
 
-    public static boolean save(Deck deck, String saveFileName){
+    public static boolean save(DeckManager deckManager, String saveFileName){
+        if (saveFileName == null || saveFileName.isEmpty()) {
+            System.out.println("セーブするファイル名が入力されていません。");
+            return false;
+        }
+
         String textSaveFile = saveFileName + ".txt";
         try (FileWriter fw = new FileWriter(textSaveFile)) {
-            for (Card card : deck.getCardList()) {
+            for (Card card : deckManager.getCardList()) {
                 fw.write(card.toString());
                 fw.write("\r\n");
             }
             fw.write("\r\n");
             fw.write("マナカーブ\r\n");
-            fw.write(deck.getManaCurveText());
+            fw.write(deckManager.getManaCurveText());
 
             fw.write("\r\n");
-            fw.write("色バランス\r\n");
-            fw.write(deck.getColorBalanceText());
+            fw.write("文明バランス\r\n");
+            fw.write(deckManager.getColorBalanceText());
         } catch (Exception e) {
             System.out.println("ファイル書き込み中に例外発生:" + e.getMessage());
             return false;
@@ -30,7 +35,7 @@ public class SaveDeck {
         try (
                 FileOutputStream fos = new FileOutputStream(objectSaveFile);
                 ObjectOutputStream oos = new ObjectOutputStream(fos)){
-            oos.writeObject(deck);
+            oos.writeObject(deckManager.getDeck());
             oos.flush();
         } catch (Exception e) {
             System.out.println("セーブ中に例外発生:" + e.getMessage());
