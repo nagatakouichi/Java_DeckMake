@@ -9,8 +9,8 @@ DeckMakeはカードの情報を入力することでデッキを作成し、そ
 
 # 機能概要
 
-1.カードの情報とデッキに入れる枚数を入力していくことで、デッキを作ることができます。  
-![1](https://github.com/user-attachments/assets/be93bfc2-5a65-4e58-974a-506befbe77e5)  
+1.ウインドウにカードの情報とデッキに入れる枚数を入力し、カードを追加していくことでデッキを作ることができます。  
+![cardGUI](https://github.com/user-attachments/assets/17d91df7-ee46-46ff-8d17-a34f7ecb323f)
 
 2.ウインドウで「はい」を選択することで連続でのカード追加ができます。  
 ![2](https://github.com/user-attachments/assets/81f45a5b-a301-419f-b92e-7ee8a42d81bb)
